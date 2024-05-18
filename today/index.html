@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's next</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../todolist.svg">
+
+</head>
+<body>
+  <div class="window">
+    <div class="loader">
+        <div class="square" id="sq1"></div>
+        <div class="square" id="sq2"></div>
+        <div class="square" id="sq3"></div>
+        <div class="square" id="sq4"></div>
+        <div class="square" id="sq5"></div>
+        <div class="square" id="sq6"></div>
+        <div class="square" id="sq7"></div>
+        <div class="square" id="sq8"></div>
+        <div class="square" id="sq9"></div>
+      </div>
+</div>
+    
+    <nav>
+        <div>
+        <a href="../today/index.html"><div class="side"><img src="../startup.svg" alt=""><span>Today</span></div></a>
+        <a href="../todo/index.html"><div class="side"><img src="../todolist.svg" alt=""><span>To Do</span></div></a>
+        
+        </div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="side colores"><div><div class="paleta default"></div>
+        <div class="paleta femenino"></div>
+        <div class="paleta masculino"></div>
+    </div>
+        <span>Color</span></div>
+
+    </nav>
+    <main>
+
+
+    <div class="container welcomeback">
+        
+            <h1>Welcome back Captain!</h1>
+            <h3>This is your calendar for today</h3>
+            <div class="appointments">
+
+                <p>To do</p>
+                <div class="grid today">
+                <!--<label class="cl-checkbox">
+                    <input checked="" type="checkbox">
+                    <span></span>
+                  </label>
+                -->
+                </div>
+            </div>
+            
+            <div class="todo">
+
+            </div>
+
+    </div>  
+    <div class="appointments container">
+        <h2>A summary of what you have done</h2>
+        <div class="container">
+            <span id="done" class="done">122</span> tasks done
+            
+        </div>
+        <div class="container">
+            <span id="urgent" class="done">2</span> urgent tasks
+            
+        </div>
+        <div class="container urgent">
+            <h2>Some of your <i>urgent</i> tasks:</h2>
+          
+
+          
+        </div>
+        
+    </div>
+    
+    <div class="statistics container">
+        <h2>Your tasks stats</h2>
+        
+        <div class="chart">
+            <canvas id="stats"></canvas>
+        </div>
+    </div>
+
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
