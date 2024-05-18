@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's next</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../todolist.svg">
+</head>
+<body>    
+    <div class="window">
+        <div class="loader">
+            <div class="square" id="sq1"></div>
+            <div class="square" id="sq2"></div>
+            <div class="square" id="sq3"></div>
+            <div class="square" id="sq4"></div>
+            <div class="square" id="sq5"></div>
+            <div class="square" id="sq6"></div>
+            <div class="square" id="sq7"></div>
+            <div class="square" id="sq8"></div>
+            <div class="square" id="sq9"></div>
+          </div>
+    </div>
+    <nav>
+        <div>
+            <a href="../today/index.html"><div class="side"><img src="../startup.svg" alt=""><span>Today</span></div></a>
+            <a href="../todo/index.html"><div class="side"><img src="../todolist.svg" alt=""><span>To Do</span></div></a>
+            <a href="../projects/index.html"><div class="side"><img src="../projects.svg" alt=""><span>Proyects</span></div></a>
+        </div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="space"></div>
+        <div class="side colores">
+            <div>
+                <div class="paleta default"></div>
+                <div class="paleta femenino"></div>
+                <div class="paleta masculino"></div>
+            </div>
+            <span>Color</span>
+        </div>
+        <a href="../settings/index.html"><div class="side "><img src="../settings.svg" alt=""><span>Configuration</span></div></a>
+    </nav>
+    <main>
+        <div class="container">
+            <h1>There you are!</h1>
+            <p>All of your tasks</p>
+            <div class="flex">
+                <button class="agregar">Add a task<div class="space"></div><img src="../add.svg" alt="add"></button>
+                <div class="vista">
+                    <div class="active">Weekly</div>
+                    <div class="show">Daily</div>
+                    <div class="show">Weekly</div>
+                    <div class="show">Monthly</div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h1 class="titulo"></h1>
+        <div id="right-left">
+            <img src="../left.svg" alt="Left" id="left">
+            <div></div>
+            <img src="../right.svg" alt="Right" id="right">
+        </div>
+        <div class="div container">
+            <img src="../add.svg" alt="add" class="cerrar">
+            <h2>Add a task</h2>
+            <form action="">
+                <div class="input-container">
+                    <input placeholder="Name" class="input-field" type="text" name="name">
+                    <label for="input-field" class="input-label">Name</label>
+                    <span class="input-highlight"></span>
+                </div>
+                <label for="date">Date
+                    <input id="date" type="date" class="container inp" name="date">
+                </label>
+                <label for="time">Time
+                    <input type="time" class="container inp" name="time">
+                </label>
+                <label for="ur">Urgent
+                    <input id="ur" type="checkbox" class="input" name="urgent">
+                </label>
+                <hr>
+                <input type="submit" value="Submit" class="input">
+            </form>
+        </div>
+        <div class="grid"></div>
+    </main>
+    <script src="index.js"></script>
+    
+</body>
+</html>
